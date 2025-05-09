@@ -7,7 +7,7 @@ This repository is the official implementation of [My Paper Title](https://openr
 >📋  Optional: include a graphic explaining your approach/main result, bibtex entry, link to demos, blog posts and tutorials
 
 An overview of our benchmark workflow is illustrated in the following figure, showcasing Partial Attribute Simulation (left) and Full Attribute Simulation (right). 
-![Benchmark Workflow](figs/workflow.pdf)
+![image](https://github.com/dart-lab-research/EvalSoc-LLM/blob/main/figs/workflow.pdf)
 
 ## Requirements
 
