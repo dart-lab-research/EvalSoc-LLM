@@ -45,5 +45,3 @@ Output:
 e.g., `python script/plot.py result/result_R_AGE_60-92_samples_1000.csv`
 
 
-# Config description
-

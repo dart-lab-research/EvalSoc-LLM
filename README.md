@@ -1,30 +1,50 @@
 >📋  A template README.md for code accompanying a Machine Learning paper
 
-# My Paper Title
+# Large Language Models as Virtual Survey Respondents: Evaluating Sociodemographic Response Generation
 
-This repository is the official implementation of [My Paper Title](https://arxiv.org/abs/2030.12345). 
+This repository is the official implementation of [My Paper Title](https://openreview.net/forum?id=1bvK5RG0MS). 
 
 >📋  Optional: include a graphic explaining your approach/main result, bibtex entry, link to demos, blog posts and tutorials
 
+An overview of our benchmark workflow is illustrated in the following figure, showcasing Partial Attribute Simulation (left) and Full Attribute Simulation (right). 
+![Benchmark Workflow](figs/workflow.pdf)
+
 ## Requirements
 
-To install requirements:
+### Install Ollama
+To install the Ollama platform, execute the following command:
 
-```setup
-pip install -r requirements.txt
+```bash
+curl -fsSL https://ollama.com/install.sh | sh
 ```
 
->📋  Describe how to set up the environment, e.g. pip/conda/docker commands, download datasets, etc...
+After installation, you can run different versions of Llama models using the following commands:
 
-## Training
+```bash
+# For Llama 3.0 8B
+ollama run llama3
 
-To train the model(s) in the paper, run this command:
-
-```train
-python train.py --input-data <path_to_data> --alpha 10 --beta 20
+# For Llama 3.1 8B
+ollama run llama3.1:8b
 ```
 
->📋  Describe how to train the models, with example commands on how to train the models in your paper, including the full training procedure and appropriate hyperparameters.
+### Install Dependencies
+Create and activate a new conda environment with all required dependencies:
+
+```bash
+# Create environment from environment.yml
+conda env create -f environment.yml -n myenv
+
+# Activate the environment
+conda activate myenv
+```
+
+### Configure OpenAI API Key
+Create a configuration file for your OpenAI API key:
+
+```bash
+echo "YOUR_API_KEY_HERE" > config/api_key.txt
+```
 
 ## Evaluation
 
@@ -36,13 +56,6 @@ python eval.py --model-file mymodel.pth --benchmark imagenet
 
 >📋  Describe how to evaluate the trained models on benchmarks reported in the paper, give commands that produce the results (section below).
 
-## Pre-trained Models
-
-You can download pretrained models here:
-
-- [My awesome model](https://drive.google.com/mymodel.pth) trained on ImageNet using parameters x,y,z. 
-
->📋  Give a link to where/how the pretrained models can be downloaded and how they were trained (if applicable).  Alternatively you can have an additional column in your results table with a link to the models.
 
 ## Results
 
