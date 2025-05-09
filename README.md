@@ -46,6 +46,10 @@ Create a configuration file for your OpenAI API key:
 echo "YOUR_API_KEY_HERE" > config/api_key.txt
 ```
 
+### Dataset Preparation
+
+Our dataset is publicly available on Hugging Face. You can access it through the following link: [SurveyEval-LLM](https://huggingface.co/datasets/BrainCompiler/SurveyEval-LLM)
+
 ## Evaluation
 
 To evaluate my model on ImageNet, run:
