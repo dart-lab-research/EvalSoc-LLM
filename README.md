@@ -52,11 +52,36 @@ Our dataset is publicly available on Hugging Face. You can access it through the
 
 ## Evaluation
 
+### PAS
 To evaluate my model on ImageNet, run:
 
+For example, EMP...
+
 ```eval
-python eval.py --model-file mymodel.pth --benchmark imagenet
+python ./evvaluation_pas/EMP/rpla.py --llm [llm name]
 ```
+
+llm name: gpt-3.5-turbo, gpt-4-turbo, llama3:8b, llama3.1:8b
+
+
+### FAS
+
+1. Simulation and Sample Generating
+
+we get ...(input file and output file)
+2. Manually filter dirty samples referring to section n in paper (several failure cases described in section n):
+For example :
+fig 
+Due to .... different cases (unrelated info): script x
+, we manually...
+
+we get ...(input file and output file)
+
+3. Random Sampling and Metrics Computing
+```eval
+python ... --llm [llm name]
+```
+we get ...(input file and output file)
 
 >📋  Describe how to evaluate the trained models on benchmarks reported in the paper, give commands that produce the results (section below).
 
